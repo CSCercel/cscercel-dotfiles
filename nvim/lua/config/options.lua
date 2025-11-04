@@ -15,6 +15,3 @@ vim.opt.incsearch = true
 
 -- Colors
 vim.opt.termguicolors = true
-
--- Remove comment line on Enter
-vim.opt.formatoptions:remove({ "r", "o" })
