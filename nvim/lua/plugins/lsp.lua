@@ -30,9 +30,13 @@ return {
         vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
       end
 
-      -- use the new API
       vim.lsp.config["pyright"] = {
         on_attach = on_attach,
+        settings = {
+            python = {
+                pythonPath = vim.fn.getcwd() .. "/.venv/bin/python",
+            },
+        },
       }
 
       vim.lsp.config["lua_ls"] = {
