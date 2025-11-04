@@ -22,6 +22,9 @@ return {
       local on_attach = function(_, bufnr)
         local opts = { buffer = bufnr, silent = true }
         vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+        vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
+        vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
+        vim.keymap.set("n", "gI", vim.lsp.buf.implementation, opts)
         vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
         vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
         vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
@@ -50,6 +53,17 @@ return {
       vim.lsp.enable("pyright")
       vim.lsp.enable("lua_ls")
       vim.lsp.enable("clangd")
+
+      -- Inline diagnostics
+      vim.diagnostic.config({
+                virtual_text = {
+                    spacing = 2,
+                },
+                signs = true,
+                update_in_insert = false,
+                underline = true,
+                severity_sort = true,
+            })
     end,
   },
 }
