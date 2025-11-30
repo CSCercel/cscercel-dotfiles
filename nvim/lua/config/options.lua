@@ -15,3 +15,6 @@ vim.opt.incsearch = true
 
 -- Colors
 vim.opt.termguicolors = true
+
+-- Hide End-of-Buffer symbols
+vim.opt.fillchars:append({ eob = " " })
