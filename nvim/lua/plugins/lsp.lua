@@ -60,14 +60,26 @@ return {
 
       -- Inline diagnostics
       vim.diagnostic.config({
-                virtual_text = {
-                    spacing = 2,
-                },
                 signs = true,
                 update_in_insert = false,
                 underline = true,
                 severity_sort = true,
-            })
+                float = {
+                    border = "rounded",
+                    style = "minimal",
+                    source = "always",
+                    header = "",
+                    prefix = "",
+                },
+        })
+
+        -- Show diagnostics in a floating window on cursor hold
+        vim.api.nvim_create_autocmd("CursorHold", {
+            callback = function()
+                vim.diagnostic.open_float(nil, { focus = false, scope = "line" })
+            end,
+        })
+
     end,
   },
 }

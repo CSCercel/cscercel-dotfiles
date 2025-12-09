@@ -18,3 +18,12 @@ vim.opt.termguicolors = true
 
 -- Hide End-of-Buffer symbols
 vim.opt.fillchars:append({ eob = " " })
+
+-- Update time
+vim.opt.updatetime = 50
+
+-- Do not cross this line
+vim.opt.colorcolumn = "80"
+
+-- See more
+vim.opt.scrolloff = 8
