@@ -75,6 +75,7 @@ return {
 
         -- Show diagnostics in a floating window on cursor hold
         vim.api.nvim_create_autocmd("CursorHold", {
+            group = vim.api.nvim_create_augroup("ShowLineDiagnostics", { clear = true }),
             callback = function()
                 vim.diagnostic.open_float(nil, { focus = false, scope = "line" })
             end,
