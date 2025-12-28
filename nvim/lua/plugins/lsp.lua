@@ -12,6 +12,8 @@ return {
           "pyright",
           "lua_ls",
           "clangd",
+          "gopls",
+          "ts_ls",
         },
       })
     end,
@@ -53,10 +55,20 @@ return {
         on_attach = on_attach,
       }
 
+      vim.lsp.config["gopls"] = {
+        on_attach = on_attach,
+      }
+
+      vim.lsp.config["ts_ls"] = {
+        on_attach = on_attach,
+      }
+
       -- start servers automatically when opening matching filetypes
       vim.lsp.enable("pyright")
       vim.lsp.enable("lua_ls")
       vim.lsp.enable("clangd")
+      vim.lsp.enable("gopls")
+      vim.lsp.enable("ts_ls")
 
       -- Inline diagnostics
       vim.diagnostic.config({
