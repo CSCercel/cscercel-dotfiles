@@ -98,3 +98,8 @@ export FZF_BASE=/usr/share/fzf
 eval "$(starship init zsh)"
 source <(fzf --zsh)
 eval "$(zoxide init zsh)"
+
+# tmux always
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+    tmux attach-session -t default || tmux new-session -s default
+fi
