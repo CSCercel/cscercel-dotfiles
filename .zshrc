@@ -105,3 +105,9 @@ eval "$(zoxide init zsh)"
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
     tmux attach-session -t default || tmux new-session -s default
 fi
+
+# Customize fzf and bat
+# Open in tmux popup if on tmux, otherwise use --height mode
+export FZF_DEFAULT_OPTS='--height 80% --tmux bottom,80% --layout reverse --border top'
+export FZF_CTRL_T_OPTS="--preview 'bat --style=numbers --color=always --line-range :500 {}'"
+export BAT_THEME="OneHalfDark"
