@@ -73,7 +73,6 @@ alias lsa='eza -la --group-directories-first --icons=always'
 alias lt='eza -T --group-directories-first --icons=always'
 alias lta='eza -Ta --group-directories-first --icons=always'
 
-alias cd="z"
 setopt auto_cd
 
 # Cleanup orphaned packages
