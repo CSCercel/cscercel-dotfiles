@@ -108,6 +108,6 @@ fi
 
 # Customize fzf and bat
 # Open in tmux popup if on tmux, otherwise use --height mode
-export FZF_DEFAULT_OPTS='--height 80% --tmux bottom,80% --layout reverse --border top'
+export FZF_DEFAULT_OPTS='--height 50% --tmux bottom,50% --layout default --border top'
 export FZF_CTRL_T_OPTS="--preview 'bat --style=numbers --color=always --line-range :500 {}'"
 export BAT_THEME="OneHalfDark"
