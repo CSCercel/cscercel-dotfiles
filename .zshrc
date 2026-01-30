@@ -4,6 +4,7 @@ HISTSIZE=1000
 SAVEHIST=1000
 setopt auto_cd
 
+export EDITOR='nvim'
 
 # Addons
 eval "$(starship init zsh)"
