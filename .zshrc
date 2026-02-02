@@ -5,6 +5,7 @@ SAVEHIST=1000
 setopt auto_cd
 
 export EDITOR='nvim'
+export PATH="$HOME/.local/bin:$PATH"
 
 # Addons
 eval "$(starship init zsh)"
