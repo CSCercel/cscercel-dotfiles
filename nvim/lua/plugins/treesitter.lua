@@ -28,6 +28,7 @@ return {
                 "jsdoc",
                 "typescript",
                 "go",
+                "sql",
 	        },
 	        auto_install = false,
 	})
