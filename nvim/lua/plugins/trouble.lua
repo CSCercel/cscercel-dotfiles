@@ -1,11 +1,23 @@
 return {
-    "folke/trouble.nvim",
-    opts = {},
-    keys = {
-        { "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>", desc = "Diagnostics (Trouble)" },
-        { "<leader>cs", "<cmd>Trouble symbols toggle<cr>", desc = "Symbols (Trouble)" },
-        { "<leader>cS", "<cmd>Trouble lsp toggle<cr>", desc = "LSP references/definitions/... (Trouble)" },
-        { "<leader>xL", "<cmd>Trouble loclist toggle<cr>", desc = "Location List (Trouble)" },
-        { "<leader>xQ", "<cmd>Trouble qflist toggle<cr>", desc = "Quickfix List (Trouble)" },
+    {
+        "folke/trouble.nvim",
+        config = function()
+            require("trouble").setup({
+                icons = true,
+            })
+
+            vim.keymap.set("n", "<leader>tt", function()
+                require("trouble").toggle()
+            end)
+
+            vim.keymap.set("n", "[t", function()
+                require("trouble").next({skip_groups = true, jump = true});
+            end)
+
+            vim.keymap.set("n", "]t", function()
+                require("trouble").previous({skip_groups = true, jump = true});
+            end)
+
+        end
     },
 }
