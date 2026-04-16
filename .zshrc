@@ -1,8 +1,13 @@
 # Configuration
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+setopt hist_ignore_dups
+setopt hist_expire_dups_first
+setopt hist_ignore_space
 setopt auto_cd
+
+# History
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
 
 export EDITOR='nvim'
 export PATH="$HOME/.local/bin:$PATH"
