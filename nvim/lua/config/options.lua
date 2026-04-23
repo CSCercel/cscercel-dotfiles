@@ -23,7 +23,7 @@ vim.opt.fillchars:append({ eob = " " })
 vim.opt.updatetime = 50
 
 -- Do not cross this line
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "120"
 
 -- See more
 vim.opt.scrolloff = 8
