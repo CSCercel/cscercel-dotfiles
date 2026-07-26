@@ -27,3 +27,6 @@ vim.opt.colorcolumn = "120"
 
 -- See more
 vim.opt.scrolloff = 8
+
+-- fix delay in SQL files
+vim.g.omni_sql_no_default_maps = 1
