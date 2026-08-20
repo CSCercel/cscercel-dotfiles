@@ -24,6 +24,7 @@ return {
                 "typescript",
                 "tsx",
                 "go",
+                "odin",
                 "sql",
                 "templ",
                 "comment",

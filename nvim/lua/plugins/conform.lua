@@ -10,6 +10,7 @@ return {
             formatters_by_ft = {
                 lua = { "stylua" },
                 go = { "gofmt" },
+                odin = { "odinfmt" },
                 python = { "ruff_format" },
                 javascript = { "prettier" },
                 typescript = { "prettier" },
