@@ -12,22 +12,22 @@ hl.config({
                 colors = { CACHYLRED, CACHYDRED },
                 angle = 45,
             },
-            inactive_border = CACHYGRAY,
+            inactive_border = CACHYBLANK,
         },
     },
     group = {
         col = {
             border_active = CACHYLBLUE,
-            border_inactive = CACHYGRAY,
+            border_inactive = CACHYBLANK,
             border_locked_active = CACHYDYELLOW,
-            border_locked_inactive = CACHYGRAY,
+            border_locked_inactive = CACHYBLANK,
         },
         groupbar = {
             col = {
                 active = CACHYLRED,
-                inactive = CACHYGRAY,
+                inactive = CACHYBLANK,
                 locked_active = CACHYDYELLOW,
-                locked_inactive = CACHYGRAY,
+                locked_inactive = CACHYBLANK,
             },
         },
     },
