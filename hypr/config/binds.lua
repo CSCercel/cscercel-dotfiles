@@ -10,7 +10,7 @@ local launchPrefix = "uwsm app -- " -- if you are not using UWSM, make this empt
 hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd("hyprctl kill"))
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + ALT + Space", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + D", hl.dsp.window.fullscreen({ mode = 1 }))
+-- hl.bind(mainMod .. " + D", hl.dsp.window.fullscreen({ mode = 1 }))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())
 hl.bind(mainMod .. " + V", hl.dsp.layout("togglesplit"))
 
@@ -163,5 +163,5 @@ hl.bind(mainMod .. " + CONTROL + mouse_up", hl.dsp.focus({ workspace = "m-1" }))
 hl.bind(mainMod .. " + CONTROL + mouse_down", hl.dsp.focus({ workspace = "m+1" }))
 
 -- Special workspace (scratchpad)
-hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special" }))
-hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special())
+hl.bind(mainMod .. " + SHIFT + U", hl.dsp.window.move({ workspace = "special" }))
+hl.bind(mainMod .. " + U", hl.dsp.workspace.toggle_special())
