@@ -14,6 +14,7 @@ return {
                     "gopls",
                     "ts_ls",
                     "ols",
+                    "elixirls",
                 },
             })
         end,
@@ -64,6 +65,16 @@ return {
 
             vim.lsp.config["ols"] = {
                 on_attach = on_attach,
+            }
+
+            vim.lsp.config["elixirls"] = {
+                on_attach = on_attach,
+                settings = {
+                    elixirLS = {
+                        dialyzerEnabled = true,
+                        fetchDeps = false,
+                    },
+                },
             }
 
             -- start servers automatically when opening matching filetypes
