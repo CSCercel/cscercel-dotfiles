@@ -19,3 +19,15 @@ format = '[$symbol:\([$branch](bold red)\)](bold blue) '
 
 [git_status]
 style = "bold yellow"
+format = "[$all_status]($style) "
+conflicted = "✗"
+ahead = "✗"
+behind = "✗"
+diverged = "✗"
+untracked = "✗"
+stashed = "✗"
+modified = "✗"
+staged = "✗"
+renamed = "✗"
+deleted = "✗"
+up_to_date = ""
