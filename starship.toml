@@ -19,3 +19,4 @@ format = '[$symbol:\([$branch](bold red)\)](bold blue) '
 
 [git_status]
 style = "bold yellow"
+format = '([$all_status$ahead_behind]($style) )'
