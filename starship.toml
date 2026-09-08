@@ -17,10 +17,10 @@ truncation_length = 1
 
 [git_branch]
 symbol = 'git'
-format = '[$symbol:\([$branch](bold red)\)](bold blue) '
+format = '[$symbol:\([$branch](bold red)\)](bold blue)'
 
 [git_status]
-format = '[(✘$all_status)](bold yellow) '
+format = '[( ✘$all_status)](bold yellow) '
 conflicted = "​"
 stashed = "​"
 deleted = "​"
