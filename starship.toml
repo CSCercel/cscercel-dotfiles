@@ -20,12 +20,11 @@ symbol = 'git'
 format = '[$symbol:\([$branch](bold red)\)](bold blue) '
 
 [git_status]
-style = "bold yellow"
-format = '(✘[$all_status$ahead_behind]($style) )'
-conflicted = ''
-untracked = ''
-modified = ''
-staged = ''
-renamed = ''
-deleted = ''
-stashed = ''
+format = '[(✘$all_status)](bold yellow) '
+conflicted = "​"
+stashed = "​"
+deleted = "​"
+renamed = "​"
+modified = "​"
+staged = "​"
+untracked = "​"

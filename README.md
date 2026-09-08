@@ -1,4 +1,4 @@
-# my-neovim-config
+# My dotfiles 
 I use Vim, btw.
 
 
